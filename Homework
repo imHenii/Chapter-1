@@ -1,0 +1,66 @@
+// Henry Ngo
+// 2/17/2021
+// This program will convert ASCII Text to ASCII Numbers, contain a
+// base converter, and descriptive statistics. 
+
+#include<iostream>
+#include<string>
+#include<algorithm>
+#include"input.h"
+
+using namespace std;
+
+ void ASCII_Text_To_Numbers();
+ void Base_Converter();
+ void Descriptive_Statistics();
+
+int main(void)
+{
+	do
+	{
+		system("cls");
+		cout << "\n\tCMPR131 - Chapter 1 Software Development by Henry Ngo (2/17/2021) \n";
+		cout << "\t=====================================================================\n";
+		cout << "\t   1. ASCII Text to ASCII Numbers 1\n";
+		cout << "\t   2. Base Converter 2\n";
+		cout << "\t   3. Descriptive Statistics 3\n";
+		cout << "\t---------------------------------------------------------------------\n";
+		cout << "\t   0. Quit\n";
+		cout << "\t=====================================================================\n";
+		cout << "\t\toption: ";
+
+		char option[80];
+		cin >> option;
+
+		switch (atoi(option))
+		{
+		case 0: exit(1); break;
+		case 1: system("cls"); ASCII_Text_To_Numbers(); break;
+		case 2: system("cls"); Base_Converter(); break;
+		case 3: system("cls"); Descriptive_Statistics(); break;
+		default: cout << "\t\t\tERROR - Invalid option. Please re-enter.\n"; break;
+		}
+
+		cout << "\n";
+		system("pause");
+
+	} while (true);
+
+	return 0;
+
+}
+
+void ASCII_Text_To_Numbers()
+{
+
+}
+
+void Base_Converter()
+{
+
+}
+
+void Descriptive_Statistics()
+{
+
+}
